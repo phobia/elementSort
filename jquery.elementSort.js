@@ -13,7 +13,6 @@
     $.fn.sortElements = function(options) {
         var defaults = {
                 valueSource: '', //selector to get text value used for sorting, e.g. 'h2'
-                direction: 'asc' //asc || desc
             },
             container = this.eq(0).parent(),
             strings = [],
