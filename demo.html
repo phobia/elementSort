@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>jQuery elementSort Demo</title>
+	</head>
+	<body>
+	
+	    <div class="container">
+	    	<div class="item">
+	    		<h2 class="title">Åre</h2>
+	    		<p>Foo bar ipsum</p>
+	    	</div>
+	    	<div class="item">
+	    		<h2 class="title">Øre</h2>
+	    		<p>Foo bar ipsum</p>
+	    	</div>
+	    	<div class="item">
+	    		<h2 class="title">Ape</h2>
+	    		<p>Foo bar ipsum</p>
+	    	</div>
+	    	<div class="item">
+	    		<h2 class="title">Dusk</h2>
+	    		<p>Foo bar ipsum</p>
+	    	</div>
+	    </div>
+
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+		<script src="jquery.elementSort.js"></script>
+		<script>
+			$('.item').sortElements({
+				'valueSource': '.title'
+			});
+		</script>
+
+	</body>
+</html>
+		
